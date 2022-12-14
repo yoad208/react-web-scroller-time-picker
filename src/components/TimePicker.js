@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Portal } from "react-portal";
 import TimePickerSelection from "./TimePickerSelection";
 import "../styles/react-ios-time-picker.css";
