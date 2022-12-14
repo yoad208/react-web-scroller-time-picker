@@ -1,4 +1,4 @@
-import TimePicker from './src/components/TimePicker'
+import TimePicker from './dist/TimePicker'
 
 
 module.exports = TimePicker
