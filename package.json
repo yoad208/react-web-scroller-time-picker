@@ -5,8 +5,8 @@
     "url": "https://github.com/yoad208/react-web-scroller-time-picker.git"
   },
   "license": "MIT",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist"
   ],
@@ -17,7 +17,14 @@
   },
   "private": false,
   "version": "0.1.0",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.0.0"
+  },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -28,12 +35,8 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/preset-react": "^7.0.0"
-  },
   "scripts": {
-    "publish:npm": "del -f dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+    "publish:npm": "del -f dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "build:esm": "tsc",
     "build:cjs": "tsc --module Common]S --outDir dist/cjs",
     "start": "react-scripts start",
