@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { initialNumbersValue, returnSelectedValue } from "../helpers";
-import PickerEffects from "./PickerEffects";
 
 function HourWheel({ height, value, setValue, use12Hours, controllers }) {
   const hourLength = use12Hours ? 13 : 24;

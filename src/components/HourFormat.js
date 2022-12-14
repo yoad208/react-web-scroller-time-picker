@@ -1,12 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import { initialNumbersValue, returnSelectedValue } from "../helpers";
-import PickerEffects from "./PickerEffects";
 
 function HourFormat({
   height,
-  value,
-  setValue,
-  onAmPmChange,
   setHourFormat,
   hourFormat,
 }) {

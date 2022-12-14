@@ -6,27 +6,20 @@ import "../styles/react-ios-time-picker.css";
 function TimePicker({
   value: initialValue = null,
   cellHeight = 28,
-  placeHolder = "Select Time",
   pickerDefaultValue = "10:00",
   onChange = () => {},
-  onFocus = () => {},
   onSave = () => {},
   onCancel = () => {},
-  disabled = false,
-  required = false,
   cancelButtonText = "Cancel",
   saveButtonText = "Save",
   seperator = true,
-  id = null,
   use12Hours = false,
   onAmPmChange = () => {},
-  name = null,
   popupClassName = null,
-  inputClassName = null,
 }) {
   const [height, setHeight] = useState(cellHeight);
   const [inputValue, setInputValue] = useState(initialValue);
-  const [controllers, setControllers] = useState(true);
+  const [controllers, setControllers] = useState(false);
 
   let finalValue = inputValue;
 

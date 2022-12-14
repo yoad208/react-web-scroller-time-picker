@@ -209,7 +209,6 @@ function MinuteWheel({ height, value, setValue, controllers }) {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleMouseUp}
     >
-      {/* <PickerEffects height={height} /> */}
       <div
         ref={mainListRef}
         className={`${
