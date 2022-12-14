@@ -1,5 +1,5 @@
 {
-  "name": "modern-time-picker-scroller",
+  "name": "modern-time-picker-scroll",
   "repository": {
     "type": "git",
     "url": "https://github.com/yoad208/react-web-scroller-time-picker.git"
@@ -18,16 +18,7 @@
   "private": false,
   "version": "0.1.0",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-portal": "^4.2.2"
-  },
-  "DevDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/polyfill": "^7.12.1",
+    "react-portal": "^4.2.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -37,6 +28,13 @@
     "react-ios-time-picker": "^0.1.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "DevDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/polyfill": "^7.12.1"
   },
   "scripts": {
     "start": "react-scripts start",
