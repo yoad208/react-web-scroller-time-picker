@@ -4,6 +4,9 @@
     "type": "git",
     "url": "https://github.com/yoad208/react-web-scroller-time-picker.git"
   },
+  "publishConfig": {
+    "registry": "https://github.com/yoad208/react-web-scroller-time-picker/tree/TimePicker"
+  },
   "license": "MIT",
   "main": "./src/components/TimePicker.js",
   "module": "./src/components/TimePicker.js",
