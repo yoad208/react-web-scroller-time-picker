@@ -5,8 +5,8 @@
     "url": "https://github.com/yoad208/react-web-scroller-time-picker.git"
   },
   "license": "MIT",
-  "main": "./src/components/TimePicker.js",
-  "module": "./src/components/TimePicker.js",
+  "main": "lib/components/TimePicker.js",
+  "module": "lib/components/TimePicker.js",
   "babel": {
     "presets": [
       "@babel/preset-react"
