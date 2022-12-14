@@ -7,6 +7,9 @@
   "license": "MIT",
   "main": "lib/components/TimePicker.js",
   "module": "lib/components/TimePicker.js",
+  "files": [
+    "lib"
+  ],
   "babel": {
     "presets": [
       "@babel/preset-react"
