@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
    mode: 'production',
-   entry: './lib/components/TimePicker.jsx',
+   entry: './lib/components/TimePicker.js',
    output: {
       path: path.resolve('dist'),
       filename: 'TimePicker.js',
