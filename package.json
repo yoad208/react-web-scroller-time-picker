@@ -4,8 +4,13 @@
     "type": "git",
     "url": "https://github.com/yoad208/react-web-scroller-time-picker.git"
   },
-  "main": "./src/components/index.js",
+  "main": "index.js",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
   "private": false,
   "version": "0.1.0",
   "dependencies": {
@@ -18,7 +23,12 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
+  },
   "scripts": {
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel ./src/components -d dist --copy-files",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
