@@ -3,7 +3,7 @@ import {Portal} from "react-portal";
 import TimePickerSelection from "./TimePickerSelection";
 import "../styles/react-ios-time-picker.css";
 
-function TimePicker({
+export function TimePicker({
                         value: initialValue = null,
                         cellHeight = 28,
                         pickerDefaultValue = "10:00",
@@ -64,4 +64,3 @@ function TimePicker({
     </Portal>
 }
 
-export default TimePicker;
